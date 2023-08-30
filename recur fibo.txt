@@ -1,0 +1,24 @@
+// Homework ques
+// for printing nth element of the fibonaaci series using recursion
+#include <iostream>
+using namespace std;
+
+int fibo(int n){
+    if(n==2||n==1){
+        return n-1;
+    }
+    else{
+        int ans;
+        ans=fibo(n-1)+fibo(n-2);
+        return ans;
+    }
+}
+
+int main()
+{
+    cout<<"Enter the value of n: ";
+    int n;
+    cin>>n;
+    cout<<fibo(n);
+    return 0;
+}
